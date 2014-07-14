@@ -4,7 +4,7 @@ This is a PHP script which utilizes the NOAA API and Google Charts to get the ti
 
 ### What is this repository for? ###
 
-* Get the tides from NOAA
+* Get the tides from NOAA.
 * Nice graph using Google Charts.
 
 ### How do I get set up? ###
