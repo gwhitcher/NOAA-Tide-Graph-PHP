@@ -36,15 +36,42 @@
         chart.draw(data, options);
       }
     </script>
-  </head>
-  <body>
+  <title>NOAA Tide Graph PHP</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="A NOAA Tide Graph using the Google Charts and PHP.  Written by George Whitcher.">
+  <meta name="keywords" content="NOAA, tide graph, php, open source, google charts, george whitcher">
+  <style type="text/css">
+  body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	}
+  h1 {
+	  width: 900px;
+	  text-align: center;
+  }
+  #chart_div {
+	  width: 900px;
+	  height: 500px;
+  }
+  #form_div {
+	  width: 900px;
+	  text-align: center;
+  }
+  </style>
+  </head>  
+<body>
+  <h1>NOAA Tide Graph PHP</h1>
   <?php if (!empty($_GET['submit'])) { ?>
-  <div id="chart_div" style="width: 900px; height: 500px;"></div>  
+  <div id="chart_div"></div>  
   <?php } else { ?>
-  <form action="" method="get">
+  <div id="form_div">
+<form action="" method="get">
   <strong>Station ID:</strong> <input name="Station ID:" type="text" value="8443970">
   <input name="submit" type="submit" value="Submit">
-  </form>
+  <br><br>
+  <small>Don't know the Station ID?  Find it <a href="http://tidesandcurrents.noaa.gov/tide_predictions.html" target="_blank">here</a>.</small>
+</form>
+</div>
   <?php } ?>
   </body>
 </html>
