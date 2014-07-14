@@ -1,6 +1,7 @@
 # README #
 
 This is a PHP script which utilizes the NOAA API and Google Charts to get the tides for the designated station chosen.
+**DEMO**: [http://georgewhitcher.com/noaa/](http://georgewhitcher.com/noaa/)
 
 ### What is this repository for? ###
 
